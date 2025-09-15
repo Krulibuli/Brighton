@@ -1,2 +1,77 @@
+@media screen and (width: 1920px) and (height: 1080px) {
+    .navbar-brand img, .header img {
+        margin-left: 800px;
+    }
+}
+/* Header */
+.header {
+    background-color: #8f9541;
+    color: white;
+    border-bottom: none;
+    text-decoration: none;
+    position: sticky;
+}
+img {
+    margin-left: 500px;
+}
+.word{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+/* Main */
+.main {
+    background-image: url("../images/Layer 1.jpg");
+    background-size: cover;
+    padding: 40px;
+}
+.main p {
+    padding-top: 200px;
+    padding-left: 130px;;
+}
+.main span{
+    color: white;
+    font-size: 70px;
+}
+.main .main-paragraph {
+    color: white;
+    font-size: 25px;
+    padding-top: 30px;
 
-
+}
+.main .pra {
+    color: yellow;
+    font-size: 80px;
+    line-height: 90px;
+}
+.btn1 {
+    background-color: #f9eb35;
+    border: none;
+    color: black;
+    padding: 25px 130px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 130px;
+    margin-top: 100px;
+}
+.btn2 {
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 25px 130px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+.main-bg {
+    background-color: #788543;
+    padding:70px 200px;
+    z-index: -1; /* Ensure it is behind the text */
+}
+/* Footer */
+.footer {
+    background-color: #252525;
+}
