@@ -1,25 +1,20 @@
-@media screen and (width: 1920px) and (height: 1080px) {
-    .navbar-brand img, .header img {
-        margin-left: 800px;
-    }
-}
 /* Header */
-.header {
-    background-color: #8f9541;
-    color: white;
-    border-bottom: none;
-    text-decoration: none;
-    position: sticky;
+
+.navbar-brand img {
+    margin-left: 0 !important;
 }
-img {
-    margin-left: 500px;
-}
-.word{
+.word {
     color: white;
     font-size: 40px;
     font-weight: bold;
-    margin-left: 30px;
-    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.header {
+    background-color: #8f9541;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 /* Main */
 .main {
@@ -69,9 +64,43 @@ img {
 .main-bg {
     background-color: #788543;
     padding:70px 200px;
-    z-index: -1; /* Ensure it is behind the text */
+    z-index: -1;
+}
+
+.cycle-dots {
+    display: flex;
+    gap: 25px;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #f9eb35;
+    border-radius: 50%;
+    background-color: #f9eb35;
+    cursor: pointer;
+}
+
+.dot:hover {
+    border: 4px solid white;
+    background-color: transparent;
 }
 /* Footer */
 .footer {
     background-color: #252525;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+    color: white;
+}
+.footer-bottom {
+    background-color: #8f9541;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
 }
