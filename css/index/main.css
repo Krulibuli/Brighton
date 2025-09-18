@@ -1,24 +1,6 @@
-/* Header */
-
-.navbar-brand img {
-    margin-left: 0 !important;
-}
-.word {
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-bottom: 0;
-}
-.header {
-    background-color: #8f9541;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
 /* Main */
 .main {
-    background-image: url("../images/Layer 1.jpg");
+    background-image: url("../../images/Layer\ 1.jpg");
     background-size: cover;
     padding: 40px;
 }
@@ -86,21 +68,4 @@
 .dot:hover {
     border: 4px solid white;
     background-color: transparent;
-}
-/* Footer */
-.footer {
-    background-color: #252525;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    padding: 40px;
-    color: white;
-}
-.footer-bottom {
-    background-color: #8f9541;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    font-size: 20px;
 }
