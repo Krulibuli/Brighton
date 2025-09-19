@@ -27,6 +27,7 @@
     text-decoration-color: #f9eb35;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
+    transition:0.2s;
 }
 .nav-item {
     font-size: 30px;
