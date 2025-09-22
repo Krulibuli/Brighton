@@ -1,0 +1,36 @@
+.main {
+    min-height: 100vh;
+    background-color: #8f9741;
+}
+.main h1 {
+    text-align: center;
+}
+.main span {
+    color: white;
+}
+.div1 form{
+    padding: 300px;
+}
+/* .div2 img {
+    width: 600px;
+    height: 500px;
+    padding: 200px 200px;
+} */
+.div2 {
+    background-image: url(../../images/google-maps-uk.png);
+    background-size: cover;
+    margin: 150px;
+}
+
+
+/* Grid */
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }

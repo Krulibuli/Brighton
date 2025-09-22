@@ -1,41 +1,43 @@
 .main {
-    display: flex;
-    align-items: center;
-    position: relative;
-    background-color: #f7f7f7;
-    z-index: -2;
-    min-height: 70vh
-}
-.img {
-    position: relative;
-    z-index: -1;
-    margin-right: -80px;
-}
-.img img {
-    height: auto;
-    display: block;
+    /* align-items: center;
+    position: relative; */
+    background-image: url(../../images/girl\ eggs\ with\ background.png);
+    background-size: cover;
+
+    min-height: 90vh
 }
 .text{
-      padding-left: 35px;
-      max-width: 550px;
-    }
-
+    max-width: 700px;
+}
 .text h2 {
-      font-size: 40px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
 .text p {
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
+    line-height: 1.6;
+    margin-bottom: 90px;
+    font-size: 25px;
+}
 .button {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #ff0;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      transition: 0.2s;
-    }
+    display: inline-block;
+    padding: 20px 42px;
+    background-color: #ff0;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #ffea00;
+    transition: 0.2s;
+}
+.container-for-text {
+    padding: 300px 0px 0px 1100px;    
+}
+@media (min-width: 2500px) {
+    .text {max-width: 900px;}
+    .text h2 {font-size: 70px; font-weight: bold; margin-bottom: 40px;}
+    .text p {line-height: 1.6; margin-bottom: 120px; font-size: 30px;}
+    .button {padding: 35px 90px; font-size: 20px;}
+    .container-for-text {padding: 300px 0px 0px 1350px}
+}
