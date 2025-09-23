@@ -1,36 +1,62 @@
 .main {
-    min-height: 100vh;
-    background-color: #8f9741;
+    min-height: 90vh;
+    background-color: #6f7b3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
 }
 .main h1 {
     text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
 }
 .main span {
     color: white;
 }
-.div1 form{
-    padding: 300px;
+/* Grid */
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 80%;
+    max-width: 1200px;
 }
-/* .div2 img {
-    width: 600px;
-    height: 500px;
-    padding: 200px 200px;
-} */
+/* Form */
+.div1 form {
+    display: flex;
+    flex-direction: column;
+
+}
+.div1 form input,
+.div1 form textarea {
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+}
+#submission {
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 12px;
+    width: 150px;
+}
+#submission:hover {
+    background: #ca1d1d;
+    transition: 0.3s;
+}
+.div1 form textarea {
+    resize: none;
+    padding: 50px 15px;
+}
+/* Map */
 .div2 {
     background-image: url(../../images/google-maps-uk.png);
     background-size: cover;
-    margin: 150px;
+    background-position: center;
+    min-height: 400px;
 }
-
-
-/* Grid */
-.parent {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-.div2 { grid-area: 1 / 2 / 2 / 3; }

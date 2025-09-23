@@ -1,11 +1,50 @@
 /* Main */
 .main {
     min-height: 70vh;
-    margin: 200px 500px;
+    margin: 140px 260px; 
     box-sizing: border-box;
 }
 .parent div i{
     background-color: #eeeded;
+}
+.main h1 {
+    font-size: 42px;
+}
+.icon {
+    flex: 0 0 110px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon i:hover {
+    background-color: #909443;
+    transition: 0.2s;
+}
+.icon i {
+    background-color: #eeeded;
+    width: 110px;
+    height: 110px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+}
+.text h3 { 
+    margin: 0 0 8px 0;
+    font-size: 22px; 
+}
+.text p {
+    margin: 0;
+    color: #666; 
+    line-height: 1.45;
+    font-size: 17px;
+}
+.main p {
+    font-size: 18px; 
 }
 /* Main Grid */
 .parent {
@@ -27,69 +66,12 @@ grid-row-gap: 10px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 16px;
-    padding: 12px;
+    gap: 20px;
+    padding: 16px;
 }
-.icon {
-    flex: 0 0 84px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.icon i:hover {
-    background-color: #909443;
-    transition: 0.2s;
-}
-.icon i {
-    background-color: #eeeded;
-    width: 84px;
-    height: 84px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-}
-.text {
-    display: flex;
-    flex-direction: column;
-}
-.text h3 { margin: 0 0 8px 0; }
-.text p { margin: 0; color: #666; line-height: 1.45; }
+
 /* Media Query */
-@media (min-width: 1200px) {
-    .main { margin: 160px 380px; }
-    .main h1 { font-size: 34px; }
-    .main p { font-size: 16px; }
-    .parent > div { gap: 18px; padding: 14px; }
-    .icon { flex: 0 0 96px; }
-    .icon i { width: 96px; height: 96px; font-size: 32px; }
-    .text h3 { font-size: 20px; }
-    .text p { font-size: 15px; }
-}
-
-@media (min-width: 1600px) {
-    .main { margin: 140px 260px; }
-    .main h1 { font-size: 42px; }
-    .main p { font-size: 18px; }
-    .parent > div { gap: 20px; padding: 16px; }
-    .icon { flex: 0 0 110px; }
-    .icon i { width: 110px; height: 110px; font-size: 36px; }
-    .text h3 { font-size: 22px; }
-    .text p { font-size: 17px; }
-}
-
-@media (min-width: 2000px) {
-    .main { margin: 120px 180px; }
-    .main h1 { font-size: 50px; }
-    .main p { font-size: 20px; }
-    .parent > div { gap: 22px; padding: 18px; }
-    .icon { flex: 0 0 140px; }
-    .icon i { width: 140px; height: 140px; font-size: 44px; }
-    .text h3 { font-size: 26px; }
-    .text p { font-size: 19px; }
-}
-
-@media (min-width: 2400px) {
+@media (min-width: 2500px) {
     .main { margin: 100px 120px; }
     .main h1 { font-size: 60px; }
     .main p { font-size: 22px; }
