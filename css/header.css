@@ -13,7 +13,7 @@
     padding-left: 0px;
 }
 .nav a{
-    color: white;
+    color: rgb(220, 220, 220);
     text-decoration: none;
     padding-right: 90px;
 
@@ -51,4 +51,36 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+/* Phone Media */
+@media (min-width:375px){
+    img {width: 70px; height: 50px;}
+    .word {font-size: 40px; margin: 0 40px; letter-spacing: 5px;}
+    .divider {width: 500px; height: 3px; background: #f9eb35; margin: 0 20px; display: inline-block;} 
+    ul.nav {padding: 0px;}
+    /* .container-fluid {flex-direction: column;} */
+}
+@media (min-width:700px){
+    img {width: 70px; height: 50px;}
+    .word {font-size: 40px; margin: 0 200px; letter-spacing: 5px;}
+    .divider {width: 800px; height: 3px; background: #f9eb35; margin: 0 20px; display: inline-block;} 
+    .nav a {padding:0px 20px;}
+    .nav-item{font-size: 25px;}
+    /* .container-fluid {flex-direction: column;} */
+}
+@media (min-width:900px){
+    img {width: 130px; height: 90px;}
+    .word {font-size: 50px; margin: 0 40px; letter-spacing: 5px;}
+    .divider {width: 800px; height: 3px; background: #f9eb35; margin: 0 20px; display: inline-block;} 
+    .nav-item{font-size: 25px;}
+    .container-fluid {flex-direction: column;}
+}
+/* Computer Media */
+@media (min-width:1900px){
+    .divider {width: 300px; height: 3px; background: #f9eb35; margin: 0 20px; display: inline-block;}
+    .nav a {padding-right: 40px;}
+}
+@media (min-width:2500px){
+    .divider {width: 600px; height: 3px; background: #f9eb35; margin: 0 20px; display: inline-block;}
+    .nav a {padding-right: 60px;}
 }
