@@ -9,7 +9,7 @@
     padding-right: 10px;
 }
 .company {
-    padding: 20px;
+
     align-items: center;
 }
 .footer_icon h1 {
@@ -85,4 +85,32 @@
     padding: 10px;
     color: white;
     font-size: 20px;
+}
+/* Media Query */
+@media (max-width: 1024px) {
+    .parents {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 20px;
+        grid-column-gap: 0;
+    }
+    .company,
+    .contacts,
+    .info,
+    .account,
+    .newletter,
+    .sbox {grid-area: unset; max-width: 100%; margin: 10px 0;}
+    .newletter {margin-top: 0;}
+    .sbox {margin: 0; justify-self: center;}
+}
+
+@media (max-width: 600px) {
+    .parents {padding: 10px;}
+    .subscribe-box {flex-direction: column; width: 100%; max-width: 100%; border-radius: 20px;}
+    .subscribe-box input {border-radius: 20px 20px 0 0; padding: 12px 10px; font-size: 15px;}
+    .subscribe-box button {border-radius: 0 0 20px 20px; padding: 12px 0; width: 100%; font-size: 15px;}
+    .company,
+    .contacts,
+    .info,
+    .account {margin: 10px auto 0; max-width: 300px;}
 }
