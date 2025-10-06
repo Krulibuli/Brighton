@@ -106,9 +106,9 @@
 
 @media (max-width: 600px) {
     .parents {padding: 10px;}
-    .subscribe-box {flex-direction: column; width: 100%; max-width: 100%; border-radius: 20px;}
+    .subscribe-box {flex-direction: column; width: 100%; max-width: 100%; border-radius: 20px; margin: 0px;}
     .subscribe-box input {border-radius: 20px 20px 0 0; padding: 12px 10px; font-size: 15px;}
-    .subscribe-box button {border-radius: 0 0 20px 20px; padding: 12px 0; width: 100%; font-size: 15px;}
+    .subscribe-box button {border-radius:0px; padding: 12px 0; width: 100%; font-size: 15px;}
     .company,
     .contacts,
     .info,

@@ -48,17 +48,18 @@
 }
 .header {
     background-color: #8f9541;
-    position: sticky;
+
     top: 0;
     z-index: 1000;
 }
 /* Phone Media */
-@media (min-width:340px){
+@media (max-width:500px){
     img {width: 70px; height: 50px;}
     .word {font-size: 30px; margin: 0 30px; letter-spacing: 3px;}
     .divider {width: 500px; height: 3px; background: #f9eb35; margin: 0 20px; display: inline-block;} 
     ul.nav {padding: 0px;}
     li:nth-child(1) {padding: 0px 120px 0px 0px;}
+    li.nav-item{padding-right: 30px;}
 }
 @media (min-width:500px){
     img {width: 70px; height: 50px;}
@@ -66,6 +67,7 @@
     .divider {width: 500px; height: 3px; background: #f9eb35; margin: 0 20px; display: inline-block;} 
     ul.nav {padding: 0px 120px 0px 10px;}
     li:nth-child(1) {padding: 0px 120px 0px 0px;}
+    li.nav-item{padding-right: 100px;}
 }
 /* Ipad Media */
 @media (min-width:700px){
@@ -73,14 +75,16 @@
     .word {font-size: 60px; margin: 0 100px; letter-spacing: 3px;}
     .divider {width: 900px; height: 3px; background: #f9eb35; margin: 0 20px; display: inline-block;} 
     .nav a {padding:0px 10px;}
-    li:nth-child(1) {padding: 0px 0px 0px 80px;}
+    li:nth-child(1) {padding: 0px 0px 0px 70px;}
+    li.nav-item{padding-right: 0px;}
+    ul.nav{padding: 0px;}
 }
 @media (min-width:800px){
     img {width: 120px; height: 80px;}
     .word {font-size: 60px; margin: 0 130px; letter-spacing: 3px;}
     .divider {width: 800px; height: 3px; background: #f9eb35; margin: 0 20px; display: inline-block;} 
     .nav a {padding:0px 10px;}
-    li:nth-child(1) {padding: 0px 0px 0px 90px;}
+    li:nth-child(1) {padding: 0px 0px 0px 140px;}
 }
 @media (min-width:900px){
     img {width: 120px; height: 80px;}

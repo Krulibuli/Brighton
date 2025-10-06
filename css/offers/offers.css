@@ -81,6 +81,9 @@ grid-row-gap: 10px;
     .text h3 { font-size: 30px; }
     .text p { font-size: 22px; }
 }
+/* @media (max-width: 600px){
+    .main h1 {font-size: 20px;}
+} */
 
 
 
