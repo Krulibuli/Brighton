@@ -55,7 +55,7 @@
 /* Phone Media */
 @media (max-width:500px){
     img {width: 70px; height: 50px;}
-    .word {font-size: 30px; margin: 0 30px; letter-spacing: 3px;}
+    .word {font-size: 29px; margin: 0 30px; letter-spacing: 3px;}
     .divider {width: 500px; height: 3px; background: #f9eb35; margin: 0 20px; display: inline-block;} 
     ul.nav {padding: 0px;}
     li:nth-child(1) {padding: 0px 120px 0px 0px;}

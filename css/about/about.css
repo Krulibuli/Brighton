@@ -36,10 +36,10 @@
     padding: 500px 0px 0px 2000px;    
 }
 @media (max-width:3000px){
-    .container-for-text {padding: 500px 0px 0px 1500px;}
+    .container-for-text {padding: 300px 0px 0px 1500px;}
 }
 @media (max-width:2500px){
-    .container-for-text {padding: 500px 0px 0px 1300px;}
+    .container-for-text {padding: 300px 0px 0px 1300px;}
 }
 @media (max-width:2200px){
     .container-for-text {padding: 500px 0px 0px 1000px;}

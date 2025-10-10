@@ -26,6 +26,10 @@
     font-size: 80px;
     line-height: 90px;
 }
+.buttons a {
+    text-decoration-line: none;
+    color: black;
+}
 .btn1 {
     background-color: #f9eb35;
     border: none;
