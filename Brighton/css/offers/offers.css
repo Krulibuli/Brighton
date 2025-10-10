@@ -1,0 +1,107 @@
+/* Main */
+.main {
+    min-height: 70vh;
+    margin: 140px 260px; 
+    box-sizing: border-box;
+}
+.parent div i{
+    background-color: #eeeded;
+}
+.main h1 {
+    font-size: 42px;
+}
+.icon {
+    flex: 0 0 110px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon i:hover {
+    background-color: #909443;
+    transition: 0.2s;
+}
+.icon i {
+    background-color: #eeeded;
+    width: 110px;
+    height: 110px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+}
+.text h3 { 
+    margin: 0 0 8px 0;
+    font-size: 22px; 
+}
+.text p {
+    margin: 0;
+    color: #666; 
+    line-height: 1.45;
+    font-size: 17px;
+}
+.main p {
+    font-size: 18px; 
+}
+/* Main Grid */
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 3 / 1 / 4 / 2; }
+.div4 { grid-area: 1 / 2 / 2 / 3; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 3 / 2 / 4 / 3; }
+
+.parent > div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 16px;
+}
+
+/* Media Query */
+@media (min-width: 2500px) {
+    .main { margin: 100px 120px; min-height: 100vh;}
+    .main h1 { font-size: 60px; }
+    .main p { font-size: 22px; }
+    .parent > div { gap: 26px; padding: 20px; }
+    .parent {margin-top: 100px;}
+    .icon { flex: 0 0 160px; }
+    .icon i { width: 160px; height: 160px; font-size: 52px; }
+    .text h3 { font-size: 30px; }
+    .text p { font-size: 22px; }
+}
+@media (max-width: 1024px){
+    .main {margin: 20px 10px}
+}
+@media (max-width: 600px){
+    .main {margin: 10px 26px; grid-template-columns: 1fr;}
+    .parent {grid-template-columns: 1fr;}
+    .parent > div {flex-direction: column; align-items: center; text-align: center; grid-row-gap: 0px; grid-column-gap: 0px;}
+    .icon {flex: none; margin-bottom: 5px;}
+    .div1, .div2, .div3, .div4, .div5, .div6 {grid-area: auto;}
+}
+/* @media (max-width: 600px){
+    .main h1 {font-size: 20px;}
+} */
+
+
+
+
+
+
+
+
+
+
